@@ -26,15 +26,14 @@ body {
     z-index: 10;
 }
 
+/* Position fullscreen button at bottom left */
 #fullscreen-btn {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 20px;
 }
 
+/* Position play-video button at bottom right */
 #play-video-btn {
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 150px;  /* Make sure it's slightly to the right */
+    right: 20px;
 }
 
 /* Video background style */
