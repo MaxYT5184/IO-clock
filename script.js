@@ -52,3 +52,10 @@ function toggleFullScreen() {
         videoElement.msRequestFullscreen();
     }
 }
+
+// Play video and toggle fullscreen
+function playAndFullscreen() {
+    const videoElement = document.getElementById("background-video");
+    videoElement.play();
+    toggleFullScreen();
+}
