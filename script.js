@@ -38,3 +38,17 @@ setInterval(updateClock, 1000);
 
 // Initialize on page load
 updateClock();
+
+// Toggle fullscreen mode
+function toggleFullScreen() {
+    const videoElement = document.getElementById("background-video");
+    if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+    } else if (videoElement.mozRequestFullScreen) { // Firefox
+        videoElement.mozRequestFullScreen();
+    } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        videoElement.webkitRequestFullscreen();
+    } else if (videoElement.msRequestFullscreen) { // IE/Edge
+        videoElement.msRequestFullscreen();
+    }
+}
