@@ -1,3 +1,4 @@
+// Function to update the analog clock hands
 function updateClock() {
     const hourHand = document.getElementById("hour-hand");
     const minuteHand = document.getElementById("minute-hand");
@@ -58,4 +59,10 @@ function playAndFullscreen() {
     const videoElement = document.getElementById("background-video");
     videoElement.play();
     toggleFullScreen();
+}
+
+// Play music by playing the YouTube video
+function playMusic() {
+    const videoElement = document.getElementById("background-video");
+    videoElement.play();
 }
