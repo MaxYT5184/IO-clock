@@ -12,17 +12,29 @@ body {
 }
 
 /* Fullscreen button style */
-#fullscreen-btn {
+#fullscreen-btn, #play-video-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    bottom: 20px;
+    width: 120px;
+    height: 50px;
     background-color: transparent;
     border: 2px solid #fff;
-    border-radius: 50%;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    color: #fff;
     z-index: 10;
+}
+
+#fullscreen-btn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#play-video-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 150px;  /* Make sure it's slightly to the right */
 }
 
 /* Video background style */
