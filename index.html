@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background music (YouTube) -->
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/_4kHxtiuML0?autoplay=1&loop=1&playlist=_4kHxtiuML0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Video Background -->
+    <video id="background-video" autoplay loop muted>
+        <source src="https://www.youtube.com/watch?v=_4kHxtiuML0" type="video/mp4">
+    </video>
+
+    <!-- Fullscreen Button -->
+    <button id="fullscreen-btn" onclick="toggleFullScreen()"></button>
 
     <div class="clock-container">
         <div class="analog-clock">
