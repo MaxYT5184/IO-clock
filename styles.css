@@ -9,10 +9,11 @@ body {
     color: #fff;
     overflow: hidden;
     position: relative;
+    background-color: black;
 }
 
 /* Fullscreen button style */
-#fullscreen-btn, #play-video-btn {
+#fullscreen-btn, #play-video-btn, #play-music-btn {
     position: absolute;
     bottom: 20px;
     width: 120px;
@@ -36,7 +37,13 @@ body {
     right: 20px;
 }
 
-/* Video background style */
+/* Position play-music button at bottom center */
+#play-music-btn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Video background style with a growing effect */
 #background-video {
     position: absolute;
     top: 0;
@@ -45,6 +52,20 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    animation: growBackground 20s infinite;
+}
+
+/* Keyframe animation for the growing background effect */
+@keyframes growBackground {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Clock container to center everything */
